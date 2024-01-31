@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Javi Martinez | Blog</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/faviconmorado.ico">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/menu.js" defer></script>
+</head>
+
+
+<body>
+
+    <!-- Layout principal -->
+    <div class="layout">
+
+        <!-- Barra lateral -->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                
+                <!-- Informacion general -->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/perfil.jpg" alt="Foto de perfil" class="user-info__image">
+                    </div>
+                    <h2 class="user-info__name">Javi Martinez</h2>
+                    <h4 class="user-info__job">Bioinformatician | Data Scientist</h4>
+                </div>
+
+                <!-- Navegacion -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="about.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">About me</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portfolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contact.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Redes sociales -->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/javier-martinez-delgado/" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://github.com/JaviMartinezBio" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://javimartinezbio.medium.com" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-medium"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- CV -->
+                <div class="user-info__buttons">
+                    <a href="assets/pdf/CVJavierMartinezDelgadoEN.pdf" class="user-info__btn" target="_blank" rel="noopener noreferrer">Download CV</a>
+                </div>
+                <!-- Footer -->
+                <footer class="user-info__footer">
+                    &copy; 2024 Javi Martinez
+                </footer>
+            </section>
+        </aside>
+
+        <!-- MENU RESPONSIVE -->
+        <div class="layout__menu--toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="layout__content">
+            <section class="content__page content__blog">
+                <header class="blog__header">
+                    <h1 class="blog__title">Blog</h1>
+                </header>
+                <nav class="blog__navbar">
+                    <ul class="blog__menu">
+                        <li class="blog__option blog__option--active">
+                            <a href="#" class="blog__link" data-category="todos">All</a>
+                        </li>
+                        <li class="blog__option">
+                            <a href="#" class="blog__link" data-category="Introductionbioinformatics">Learning Bioinformatics</a>
+                        </li>
+                        <li class="blog__option">
+                            <a href="#" class="blog__link" data-category="Introductiondatascience">Learning Data Science</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="blog__articles">
+                    <article class="articles__article" data-category="Introductionbioinformatics">
+                        <div class="article__top">
+                            <div class="article__category">Bioinformatics</div>
+                            <a href="https://javimartinezbio.medium.com/types-of-biological-databases-d098a560b082" class="article__image-link" target="_blank">
+                                <div class="article__mask">
+                                    <img src="assets/img/tiposdebbddbiologicas.png" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">31/01/2024</time>
+                            <a href="" class="article__link">
+                                <h2 class="article__title">Types of biological databases</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article" data-category="Introductiondatascience">
+                        <div class="article__top">
+                            <div class="article__category">Data Science</div>
+                            <a href="https://javimartinezbio.medium.com/variable-types-and-properties-3a498f753d45" class="article__image-link" target="_blank">
+                                <div class="article__mask">
+                                    <img src="assets/img/VariableTypespost.jpg" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">31/05/2022</time>
+                            <a href="" class="article__link">
+                                <h2 class="article__title">Variable types and properties. A simple review</h2>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>
